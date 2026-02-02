@@ -657,7 +657,7 @@ async def ask_ai(
         model_used="openai/gpt-oss-120b"
     )
 
-    
+
 
 @app.post("/summarize", response_model=SummaryResponse)
 async def summarize_document(
@@ -767,7 +767,7 @@ async def health_check():
         }
     }
 
-if __name__ == "__main__":
-    import uvicorn
-    port = int(os.getenv("PORT", 8000))
-    uvicorn.run(app, host="0.0.0.0", port=port)
+# if __name__ == "__main__":
+#     import uvicorn
+#     port = int(os.getenv("PORT", 8000))
+#     uvicorn.run(app, host="0.0.0.0", port=port)
